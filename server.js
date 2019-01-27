@@ -19,7 +19,7 @@ const passport = require("./config/passport");
 // ============================
 // Set up database using Mongoose
 // ============================
-mongoose.connect(db, {useNewUrlParser:true})
+mongoose.connect(process.env.MONGODB_URI || db, {useNewUrlParser:true})
   .then(() => console.log('Success! You are connected to MLAB'))
   .catch(err => console.log('Uh-oh! Mongo Connection error \n' + err))
 // =============================
