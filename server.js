@@ -32,8 +32,6 @@ if (process.env.NODE_ENV === "production") {
 // =============================
 // Morgan - used to log errors
 app.use(logger('dev'));
-
-app.use(express.static(path.join(__dirname, '../build')))
 // Cookie Parser - manage browser cookies
 app.use(cookieParser());
 // Body parser 
