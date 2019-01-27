@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { Route, Switch, redirectTo } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
 import axios from 'axios'
@@ -9,7 +9,6 @@ import Navbar from './components/Navbar'
 import Signup from './components/Signup-Form'
 import LoginForm from './components/Login-Form'
 import Dashboard from './components/Dashboard'
-import Landing from './components/Landing'
 
 class App extends Component {
   constructor() {
@@ -111,9 +110,7 @@ class App extends Component {
         <p>{this.state.responseToPost}</p>
          {/* Routes to different components */}
          <Router>
-            <Switch>
-              <Route exact path="/" Component= {Landing} />
-              
+            <Switch>              
               <Route
                 exact path="/dashboard"
                 render={() =>
