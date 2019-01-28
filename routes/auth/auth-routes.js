@@ -123,11 +123,11 @@ router.get('/ping', (req, res) => {
 
 
 // ++++ sign up ++++
-// router.get('/signup', (req, res) => res.send('you have a register message'))
-// router.get('/login', (req, res) => {
-//     console.log("you have hit log in route")
+router.get('/signup', (req, res) => res.send('you have a register message'))
+router.get('/login', (req, res) => {
+    console.log("you have hit log in route")
 
-//     res.send('you have a login message')})
+    res.send('you have a login message')})
 
   
    
