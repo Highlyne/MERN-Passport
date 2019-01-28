@@ -12,7 +12,7 @@ var path = require('path');
 // Declare all variables 
 // ============================
 const port = process.env.PORT || 3001;
-const db = require("./config/keys").MongoURI;
+// const db = require("./config/keys").MongoURI;
 const app = express();
 const routes = require("./routes");
 const passport = require("./config/passport");
